@@ -7,15 +7,6 @@
     <groupId>com.selenium.uiautomation</groupId>
     <artifactId>selenium-testng-page-factory-extended</artifactId>
     <version>1.0-SNAPSHOT</version>
-         <configuration>
-  <fork>true</fork>
-  <compilerArgs>
-    <arg>--add-opens</arg>
-    <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
-  </compilerArgs>
-</configuration>
-
-
     <repositories>
         <repository>
             <id>jitpack.io</id>
@@ -83,6 +74,14 @@
                     <source>8</source>
                     <target>8</target>
                 </configuration>
+               <configuration>
+           <fork>true</fork>
+           <compilerArgs>
+         <arg>--add-opens</arg>
+      <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+     </compilerArgs>
+    </configuration>
+
             </plugin>
         </plugins>
     </build>
