@@ -1,5 +1,6 @@
 # Use Maven with JDK 8
-FROM maven:3.8.7-openjdk-8 as build
+FROM maven:3.8.7-eclipse-temurin-8 as build
+
 
 # Install Chrome
 RUN apt-get update && apt-get install -y wget gnupg2 curl unzip \
